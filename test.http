@@ -1,0 +1,34 @@
+POST http://127.0.0.1:8080/users/
+Content-Type: application/json
+
+{
+	"id": 1,
+	"name": "Andre",
+	"email": "andre.heber+keks@gmx.net",
+	"password": "BlaBla12!@"
+}
+
+###
+
+GET http://127.0.0.1:8080/users/2
+
+###
+
+GET http://127.0.0.1:8080/users/5
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJjbGllbnRfaWQiOjEsInN1YiI6ImFuZHJlLmhlYmVyQGdteC5uZXQiLCJleHAiOjE3MDQ0ODUxOTF9.1GnFrQU1uWwd-XOQjeGknOBzzS5LtT8nkWpTsrww0Hs
+
+###
+
+DELETE http://127.0.0.1:8080/users/3
+
+###
+
+POST http://127.0.0.1:8080/users/auth
+Content-Type: application/json
+
+{
+	"email": "andre.heber@gmx.net",
+	"password": "BlaBla12!@"
+}
+
+###
